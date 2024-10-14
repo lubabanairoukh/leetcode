@@ -42,9 +42,9 @@ class Solution(object):
         i = 0
         while i < length - 1:
             if nums[i] == nums[i + 1]:
-                del nums[i]  # Remove the duplicate element in place
+                del nums[i]  
                 length -= 1
                 k -= 1
             else:
-                i += 1  # Move to the next element only if no duplicate was removed
+                i += 1  
         return k
